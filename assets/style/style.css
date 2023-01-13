@@ -28,3 +28,57 @@ body {
         display: flex;
     }
 }
+
+/* nav text */
+.nav-text {
+    display: none;
+}
+
+@media screen and (min-width: 1068px) {
+    .nav-text {
+        display: block;
+        width: 120px;
+        height: 100%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        padding-bottom: 92px;
+
+        order: 3;
+    }
+
+    .nav-text p {
+        transform: rotate(270deg);
+        translate: 0 -100%;
+
+        text-transform: uppercase;
+        font-weight: 500;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .nav-text-line {
+        display: inline-block;
+        height: 1px;
+        width: 66px;
+        background: linear-gradient(to right, white, rgba(0,0,0,0.16));
+    }
+}
+
+/* main */
+main {
+    width: 100%;
+    height: calc(100vh - 160px);
+}
+
+@media screen and (min-width: 1068px) {
+    main {
+        height: 100%;
+
+        order: 2;
+    }
+}
