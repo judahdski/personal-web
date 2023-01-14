@@ -73,11 +73,23 @@ body {
 main {
     width: 100%;
     height: calc(100vh - 160px);
+    overflow: scroll;
 }
+
+/* main::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, transparent, rgba(29, 29, 29, 0.75), #1d1d1d);
+    position: absolute;
+    bottom: 100px;
+} */
 
 @media screen and (min-width: 1068px) {
     main {
         height: 100%;
+        position: relative;
 
         order: 2;
     }
@@ -118,13 +130,153 @@ section.home {
     .home-text-content p {
         font-size: 16px;
     }
-    
+
     .home-text-content p:first-child,
     .home-text-content p:last-child {
         padding: 4px 24px;
     }
-    
+
     .home-text-content i {
         font-size: 128px;
+    }
+}
+
+/* contacts */
+section.contacts {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 48px;
+    padding: 24px 22px;
+}
+
+.contact-description {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    font-size: 14px;
+}
+
+.contact-description div p:first-child {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.contact-form,
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* kalo ada style yang sama harus digabungin */
+/* font size ngikutin max. 2 tingkat parent terdekat */
+
+.contact-form form,
+form input,
+form textarea {
+    width: 100%;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 560px;
+    box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.32);
+    background: #1d1b1b;
+    padding: 24px;
+    gap: 16px;
+}
+
+.contact-form h3 {
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+}
+
+form {
+    gap: 16px;
+}
+
+form input,
+form textarea {
+    max-width: 100%;
+    min-width: 100%;
+    height: 42px;
+    min-height: 42px;
+    padding: 10px 8px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+form button {
+    width: 175px;
+    height: 42px;
+    background: var(--main-color);
+    box-shadow: 1px 2px 16px rgba(0, 0, 0, 0.24);
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-top: 16px;
+}
+
+@media screen and (min-width: 1068px) {
+    section.contacts {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 72px;
+        padding: 32px 24px;
+    }
+
+    .contact-description {
+        gap: 48px;
+        font-size: 16px;
+    }
+
+    .contact-description div p:first-child {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .contact-form {
+        padding: 32px;
+        gap: 32px;
+    }
+
+    .contact-form h3 {
+        font-size: 36px;
+    }
+
+    form input,
+    form textarea {
+        padding: 12px 16px;
+        font-size: 16px;
+    }
+
+    form input {
+        height: 48px;
+    }
+
+    form textarea {
+        height: 120px;
+    }
+
+    form button {
+        width: 290px;
+        height: 56px;
+        margin-top: 24px;
     }
 }
