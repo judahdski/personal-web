@@ -57,13 +57,13 @@ navBtns.forEach((btn) => {
 });
 
 // hamburger button
-const hamburgerButton = document.querySelector('.mobile-nav');
+const hamburgerButton = document.getElementById('hamburgerBtn');
 
 hamburgerButton.addEventListener('click', (e) => {
     document.querySelector('nav').style.top = 0;
 });
 
-const closeNavBtn = document.getElementById('close-nav');
+const closeNavBtn = document.getElementById('closeBtn');
 
 closeNavBtn.addEventListener('click', (e) => {
     document.querySelector('nav').style.top = '-100%';

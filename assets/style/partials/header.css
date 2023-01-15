@@ -27,6 +27,8 @@ header nav {
     gap: 24px;
 
     padding: 16px;
+    transition: .5s;
+    z-index: 1000;
 }
 
 nav i {

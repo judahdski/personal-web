@@ -21,17 +21,17 @@
 
 <body>
     <header>
-        <a href=""><img src="resources/img/regular-logo.png" class="logo"></a>
+        <a href="" class="nav-btn" data-section="home"><img src="resources/img/regular-logo.png" class="logo"></a>
         <nav>
             <i class="fa-solid fa-xmark" id="closeBtn"></i>
-            <a href="#projects">projects</a>
-            <a href="#contacts">contacts</a>
+            <a href="#projects" class="nav-btn" data-section="projects">projects</a>
+            <a href="#contacts" class="nav-btn" data-section="contacts">contacts</a>
         </nav>
         <i class="fa-solid fa-align-right mobile-nav" id="hamburgerBtn"></i>
     </header>
     <div class="split">
         <main>
-            <section id="home" class="home" style="display: none;">
+            <section id="home" class="home">
                 <!-- home -->
                 <div class="home-text-content">
                     <p>i am</p>
@@ -39,14 +39,82 @@
                     <p>a junior <br> web developer</p>
                 </div>
             </section>
-            <section id="projects" class="projects">
+            <section id="projects" class="projects" style="display: none;">
                 <!-- projects -->
-
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <img src="resources/img/projects/mandiri.png">
+                        <a href="">
+                            <p>mandiri</p>
+                        </a>
+                    </div>
+                </div>
             </section>
             <section id="contacts" class="contacts" style="display: none;">
                 <!-- contacts -->
                 <div class="contact-description">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sequi labore quis aut, aliquid, illo impedit corrupti, saepe consectetur repudiandae in nam vero ipsa ad.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod sequi labore quis aut, aliquid,
+                        illo impedit corrupti, saepe consectetur repudiandae in nam vero ipsa ad.</p>
                     <div>
                         <p>address</p>
                         <p>Bandung, Indonesia</p>
@@ -83,7 +151,10 @@
             </div>
         </footer>
         <div class="nav-text">
-            <p>home <span class="nav-text-line"></span></p>
+            <div>
+                <p id="navText">home</p>
+                <span class="nav-text-line"></span>
+            </div>
         </div>
     </div>
     <script src="assets/script.js"></script>
