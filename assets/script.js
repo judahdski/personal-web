@@ -1,6 +1,7 @@
 // Title greet
 const day = new Date();
 const hr = day.getHours();
+
 if (hr >= 0 && hr < 12) {
     document.title += ' Pagi! 🌄';
 } else if (hr == 12) {
@@ -16,7 +17,7 @@ const navBtns = document.querySelectorAll('.nav-btn');
 
 navBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
-        if (screen.width < 1068) {
+        if (screen.width < 992) {
             document.querySelector('nav').style.top = '-100%';
         }
 
