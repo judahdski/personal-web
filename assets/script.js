@@ -1,3 +1,14 @@
+// Set body inner height
+const main = document.querySelector('main');
+
+setInnerHeight('e');
+main.addEventListener('resize', setInnerHeight);
+
+function setInnerHeight(e) {
+    const innerHeight = window.innerHeight;
+    main.style.height = `${innerHeight - 60}px`;
+}
+
 // Title greet
 const day = new Date();
 const hr = day.getHours();

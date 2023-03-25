@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Halo, Selamat</title>
 
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -39,10 +39,12 @@
                 <span class="p-2" style="display: inline-block;">
                     <i class="fa-solid fa-xmark" id="closeBtn"></i>
                 </span>
-                <a href="#projects" class="nav-btn text-center p-3 pb-4 text-decoration-none" data-section="projects">
+                <a href="#projects" onclick="event.preventDefault();"
+                    class="nav-btn text-center p-3 pb-4 text-decoration-none" data-section="projects">
                     PROJECTS
                 </a>
-                <a href="#contacts" class="nav-btn text-center p-3 pb-4 text-decoration-none" data-section="contacts">
+                <a href="#contacts" onclick="event.preventDefault();"
+                    class="nav-btn text-center p-3 pb-4 text-decoration-none" data-section="contacts">
                     CONTACT
                 </a>
             </nav>
@@ -50,7 +52,7 @@
         </header>
         <div class="split d-lg-flex">
             <main class="container">
-                <section id="home" class="home justify-content-center align-items-center" style="display: none;">
+                <section id="home" class="home justify-content-center align-items-center">
                     <!-- home -->
                     <div class="home-text-content">
                         <p class="py-2 px-3 px-lg-4 mb-0">I AM</p>
@@ -58,30 +60,69 @@
                         <p class="py-2 px-3 px-lg-4 mb-0 text-end">A Junior <br> Web Developer</p>
                     </div>
                 </section>
-                <section id="projects" class="projects" style="display: none;">
-                    <!-- projects -->
-                    <div class="projects-grid">
-                        <div class="project-card">
+                <section id="projects"
+                    class="projects pt-4 px-lg-4 pb-5 py-lg-3 justify-content-center align-items-center"
+                    style="display: none;">
+                    <div class="py-3 py-lg-4 d-flex flex-column justify-content-lg-center align-content-lg-start gap-4">
+                        <div class="project-card p-3 d-flex flex-column flex-lg-row gap-3 gap-lg-4">
+                            <img src="resources/img/projects/jhondoe-3d-portfolio.png">
+                            <div class="d-lg-flex flex-column justify-content-between">
+                                <div class="project-description d-flex flex-column gap-3">
+                                    <p class="mb-0">Jhon Doe 3D Portfolio</p>
+                                    <p class="mb-0">
+                                        Website portfolio 3D ini dibangun menggunakan teknologi React JS, Tailwind, dan
+                                        Three JS. Dengan antarmuka yang interaktif dan responsif, membuat website ini
+                                        menjadi platform yang menarik untuk menampilkan portofolio seni 3D.
+                                    </p>
+                                    <p class="mb-0">Tech stack : Javascript, React JS, Three JS, Tailwind</p>
+                                </div>
+                                <a href="https://jhondoe-portfolio-judah-project.netlify.app/" target="_blank">VISIT
+                                    WEBSITE</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card p-3 d-flex flex-column flex-lg-row gap-3 gap-lg-4">
                             <img src="resources/img/projects/the-sportsid.png">
-                            <a href="https://thesport-id.000webhostapp.com/" target="_blank">
-                                <p>theSports-id</p>
-                            </a>
+                            <div class="d-lg-flex flex-column justify-content-between">
+                                <div class="project-description d-flex flex-column gap-3">
+                                    <p class="mb-0">theSports-id</p>
+                                    <p class="mb-0">
+                                        Website yang menyediakan berita dan blog seputar olahraga adalah situs yang
+                                        menyajikan informasi terkini seputar dunia olahraga, termasuk artikel, berita,
+                                        ulasan.
+                                    </p>
+                                    <p class="mb-0">Tech stack : HTML 5, CSS 3, JavaScript, PHP, Laravel</p>
+                                </div>
+                                <a href="https://thesport-id.000webhostapp.com/" target="_blank">VISIT WEBSITE</a>
+                            </div>
                         </div>
-                        <div class="project-card">
-                            <img src="resources/img/projects/about-spain.png">
-                            <a href="https://about-spain.netlify.app/" target="_blank">
-                                <p>about-spain</p>
-                            </a>
+
+                        <div class="project-card p-3 d-flex flex-column flex-lg-row gap-3 gap-lg-4">
+                            <img src="resources/img/projects/chrismast-web.png">
+                            <div class="d-lg-flex flex-column justify-content-between">
+                                <div class="project-description d-flex flex-column gap-3">
+                                    <p class="mb-0">Responsive Christmas Website</p>
+                                    <p class="mb-0">Website static bertema Christmas yang memiliki responsive design.
+                                    </p>
+                                    <p class="mb-0">Tech stack : HTML 5, CSS 3, JavaScript</p>
+                                </div>
+                                <a href="https://christmas-judah.netlify.app/" target="_blank">VISIT WEBSITE</a>
+                            </div>
                         </div>
-                        <div class="project-card">
-                            <img src="resources/img/projects/museum-pos.png">
-                            <a href="https://museum-pos.netlify.app/" target="_blank">
-                                <p>Museum Pos</p>
-                            </a>
+
+                        <div class="project-card p-3 d-flex flex-column flex-lg-row gap-3 gap-lg-4">
+                            <img src="resources/img/projects/jtodo-list.png">
+                            <div class="d-lg-flex flex-column justify-content-between">
+                                <div class="project-description d-flex flex-column gap-3">
+                                    <p class="mb-0">JTodo List</p>
+                                    <p class="mb-0">Tech stack : HTML 5, CSS 3, JavaScript</p>
+                                </div>
+                                <a href="https://jtodo-list.netlify.app/" target="_blank">VISIT WEBSITE</a>
+                            </div>
                         </div>
                     </div>
                 </section>
-                <section id="contacts" class="contacts d-flex justify-content-center align-items-stretch"
+                <section id="contacts" class="contacts justify-content-center align-items-stretch"
                     style="display: none;">
                     <div class="p-2 
                         d-flex flex-column justify-content-center align-items-start gap-3">
@@ -100,24 +141,16 @@
                     </div>
                 </section>
             </main>
-            <footer class="
-                pb-5 
-                d-lg-flex justify-content-center align-items-end
-            ">
+            <footer class="pb-5 d-lg-flex justify-content-center align-items-end">
                 <div class="d-flex flex-column gap-3">
-                    <a href="https://www.instagram.com/dskjudah/">
-                        <span style="color: white; font-size: 24px">
-                            <i class="fa-brands fa-instagram"></i>
-                        </span>
-                    </a>
                     <a href="https://www.linkedin.com/in/judahdasuki/">
                         <span style="color: white; font-size: 24px">
                             <i class="fa-brands fa-linkedin"></i>
                         </span>
                     </a>
-                    <a href="https://twitter.com/judahdskh">
+                    <a href="https://github.com/judahdski">
                         <span style="color: white; font-size: 24px">
-                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-github"></i>
                         </span>
                     </a>
                 </div>
